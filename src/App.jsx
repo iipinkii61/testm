@@ -32,10 +32,13 @@ export default function App() {
             key={obj.id}
           >
             <div>
-              <h5 className="mb-2 text-2xl font-bold text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold text-gray-900">
                 {obj.name}
               </h5>
-              <p className="text-gray-700 dark:text-gray-400">{obj.email}</p>
+              <p className="text-gray-500">{obj.email}</p>
+              <p className="text-gray-500">
+                {obj.address.street}, {obj.address.city}, {obj.address.zipcode}
+              </p>
             </div>
             <div className="flex items-center gap-2 ">
               <i

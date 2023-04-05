@@ -14,7 +14,7 @@ export default function Modal() {
       data-te-modal-init
       className="fixed top-0 left-0 z-[1055] hidden h-full w-full overflow-y-auto overflow-x-hidden outline-none"
       id="Modal"
-      tabindex="-1"
+      tabIndex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
     >
@@ -40,13 +40,13 @@ export default function Modal() {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                stroke-width="1.5"
+                strokeWidth="1.5"
                 stroke="currentColor"
                 className="h-6 w-6"
               >
                 <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
                   d="M6 18L18 6M6 6l12 12"
                 />
               </svg>
@@ -56,7 +56,7 @@ export default function Modal() {
             <form>
               <div className="mb-6">
                 <label
-                  for="name"
+                  htmlFor="name"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Name
@@ -72,7 +72,7 @@ export default function Modal() {
               </div>
               <div className="mb-6">
                 <label
-                  for="email"
+                  htmlFor="email"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Email
@@ -90,7 +90,7 @@ export default function Modal() {
 
               <div className="mb-6">
                 <label
-                  for="phone"
+                  htmlFor="phone"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Phone number
@@ -107,7 +107,7 @@ export default function Modal() {
               <p className="mb-2 text-bold">Address</p>
               <div className="mb-6">
                 <label
-                  for="street"
+                  htmlFor="street"
                   className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                 >
                   Street
@@ -124,7 +124,7 @@ export default function Modal() {
               <div className="flex justify-between gap-4">
                 <div className="w-full">
                   <label
-                    for="city"
+                    htmlFor="city"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     City
@@ -140,7 +140,7 @@ export default function Modal() {
                 </div>
                 <div className="w-full">
                   <label
-                    for="zipcode"
+                    htmlFor="zipcode"
                     className="block mb-2 text-sm font-medium text-gray-900 dark:text-white"
                   >
                     Zipcode

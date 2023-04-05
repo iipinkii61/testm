@@ -23,8 +23,15 @@ export default function EmployeeContextProvider({ children }) {
     setPeople(newArr);
   };
 
+  const updateUser = (id, obj) => {
+    const newList = people.map((el) => (el.id === id ? { ...el, ...obj } : el));
+    setPeople(newList);
+  };
+
   return (
-    <EmployeeContext.Provider value={{ people, deleteUser, createUser }}>
+    <EmployeeContext.Provider
+      value={{ people, setPeople, deleteUser, createUser, updateUser }}
+    >
       {children}
     </EmployeeContext.Provider>
   );
